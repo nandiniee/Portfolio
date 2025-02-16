@@ -1,0 +1,211 @@
+body{
+    background-image: url(floral.png);
+}
+
+.navbar{
+    height:100px;
+    background-color: rgb(174, 109, 13);
+    background: radial-gradient(circle,rgb(174,109,13) 0%, rgb(128,82,65) 100%);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.photo{
+    width:400px;
+    padding-right:20px;
+}
+.photo img{
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    border: 2px solid rgb(128, 82, 65);
+    position:relative;
+    top:50px;
+}
+.About{
+    padding-left: 50px;
+    padding-right: 50px;
+    width:700px;
+    border-left: 1px solid rgb(128, 82, 65);
+    border-right: 1px solid rgb(128, 82, 65);
+    position:relative;
+    top:40px;
+
+}
+.About p{
+    font-size: 1.2rem;
+    color: darkolivegreen;
+}
+.contact{
+    width:400px;
+    position:relative;
+    top:30px;
+    text-align: left;
+    line-height: 2rem;
+    margin-left: 100px;
+}
+.element{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(128, 82, 65);
+    color: darkolivegreen;
+}
+.navbar a{
+    color: beige;
+    text-decoration: none;
+    width:max-content;
+    padding:10px;
+}
+.navbar a:hover{
+    border: 2px solid beige;
+    border-radius: 6px;
+}
+span{
+    font-weight: bold;
+}
+
+/*education*/
+
+.education{
+    display: flex;
+    justify-content:space-evenly;
+    position:relative;
+    top:50px;
+}
+.education h1{
+    color: rgb(128, 82, 65);
+    border-top: 3px solid rgb(128, 82, 65);
+    border-bottom: 3px solid rgb(128, 82, 65);
+}
+.education p,h2{
+    color: darkolivegreen;
+}
+.hvm{
+    border-left: 0.5px solid rgb(128, 82, 65);
+    border-right: 0.5px solid rgb(128, 82, 65);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.loreto img{
+    height: 100px;
+    width:300px;
+    border: 5px solid rgb(121, 146, 78);
+    border-radius: 5px;
+}
+.hvm img{
+    height: 100px;
+    width:300px;
+    border: 5px solid rgb(121, 146, 78);
+    border-radius: 5px;
+}
+.tint img{
+    height: 100px;
+    width:300px;
+    border: 5px solid rgb(121, 146, 78);
+    border-radius: 5px;
+}
+@keyframes big{
+    from{
+        height:100px;
+        width:300px;
+    }
+    to{
+        height:120px;
+        width:360px;
+    }
+}
+.loreto img:hover{
+    animation: big 1s ease-in 0s 1 normal;
+}
+.hvm img:hover{
+    animation: big 1s ease-in 0s 1 normal;
+}
+.tint img:hover{
+    animation: big 1s ease-in 0s 1 normal;
+}
+
+/*projects*/
+
+.proj1,.proj2,.proj3{
+    height:400px;
+    width:300px;
+    background-color: rgb(221, 216, 216);
+    background:radial-gradient(circle, white 50%, rgb(221,216,216) 100%);
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: darkolivegreen;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top:50px
+}
+.proj1 h2,.proj2 h2,.proj3 h2{
+    border-bottom: 3px solid rgb(128, 82, 65);
+    color: rgb(128, 82, 65);
+}
+@keyframes big1{
+    from{
+        height: 400px;
+        width: 300px;
+    }
+    to{
+        height:440px;
+        width:330px;
+    }
+}
+.proj3:hover{
+    animation: big1 1.5s ease-in 0s 1 normal;
+}
+.proj2:hover{
+    animation: big1 1.5s ease-in 0s 1 normal;
+}
+.proj1:hover{
+    animation: big1 1.5s ease-in 0s 1 normal;
+}
+
+/*skills*/
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    top:10px;
+}
+.skill{
+    background-color: rgb(238, 214, 121);
+    background: radial-gradient(circle, rgb(238,214,121) 20%, rgb(205, 165, 6));
+    height: 70px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin:30px;
+    border: 5px solid white;
+    line-height: 10px;
+}
+
+/*hobbies*/
+
+.hobbies{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.hobby{
+    padding:50px;
+    border-right: 1px solid rgb(128, 82, 65);
+    width:fit-content;
+}
